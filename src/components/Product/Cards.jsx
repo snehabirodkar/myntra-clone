@@ -42,7 +42,7 @@ const Cards = (props) => {
           <p className="card-title">{props.product}</p>
           <p className="card-price">{props.price}</p>
 		  <div className="wishlist-wrapper">
-		  <button className="wishlist"> Wishlist </button>
+		  <button className="wishlist"> Add to bag </button>
 		  </div>
         </div>
       </div>

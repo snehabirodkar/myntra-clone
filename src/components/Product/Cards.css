@@ -18,7 +18,7 @@
 }
 .card:hover{
 	/* background-color: rgba(26, 26, 26, 0.466); */
-	box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.356);
+	box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1);
 
 }
 /* .slider {

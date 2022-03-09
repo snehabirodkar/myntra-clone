@@ -2,7 +2,6 @@ import React from "react";
 import "../../helper.css";
 import style from "./Filter.css";
 
-const radioBtn = ["Mens", "Womens", "Kids", "All"];
 const Filter = () => {
   return (
     <div className="position-fixed left-content-border">
