@@ -24,12 +24,14 @@
 .flexed {
     display: flex;
     justify-content: space-between;
-	
+	align-items: center;
+	flex-wrap: wrap;
+
 }
 
 .container {
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /**************************************************************************************************************************
