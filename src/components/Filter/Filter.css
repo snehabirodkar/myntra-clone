@@ -1,0 +1,19 @@
+
+.filter-left-content{
+	width: 80%;
+	height: 100%;
+}
+.left-content-border{
+	border-right: solid 1.5px rgb(212, 212, 212);
+	border-top: solid 1.5px rgb(212, 212, 212);
+}
+.filter-wrapper{
+	border-bottom: solid 1.5px rgb(212, 212, 212);
+	padding: 8px 0 30px 0;
+}
+.position-fixed{
+	position: sticky;
+}
+.label-space input{
+	margin: 8px;
+}

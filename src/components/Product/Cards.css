@@ -1,0 +1,59 @@
+.card{
+	background-color: #FFF;
+	/* border-radius: 12px; */
+	/* box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1); */
+	/* border: solid 1px red; */
+	margin: 15px;
+  }
+.product-image {
+	width: 210px;
+    height: 280px;
+}
+.card-info h3, p {
+	margin: 2px;
+
+}
+.card-info{
+	padding: 10px 5px;
+}
+.card:hover{
+	/* background-color: rgba(26, 26, 26, 0.466); */
+	box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.356);
+
+}
+/* .slider {
+	width: 210px;
+    height: 280px;
+  }
+
+  .slick-list, .slick-track {
+	width: 100%;
+	height: 100%;
+  }
+
+  .slide {
+	width: 100%;
+	height: 100%;
+  }
+  .slide:nth-child(1) {
+	background: red;
+  }
+  .slide:nth-child(2) {
+	background: yellow;
+  }
+  .slide:nth-child(3) {
+	background: blue;
+  } */
+  .wishlist-wrapper{
+	display: flex;
+	justify-content: center;
+  }
+.wishlist{
+	cursor: pointer;
+	margin-top: 8px;
+	width: 92%;
+	padding: 8px;
+	border: solid 1px rgba(255,63,108,.8);
+	color: rgba(255,63,108,.8);
+	background-color: #fff;
+}
