@@ -1,11 +1,12 @@
 
 .filter-left-content{
-	width: 80%;
+	width: 30%;
 	height: 100%;
-}
+} 
 .left-content-border{
 	border-right: solid 1.5px rgb(212, 212, 212);
 	border-top: solid 1.5px rgb(212, 212, 212);
+	/* padding-right: 100px; */
 }
 .filter-wrapper{
 	border-bottom: solid 1.5px rgb(212, 212, 212);

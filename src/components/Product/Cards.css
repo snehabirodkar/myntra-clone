@@ -57,3 +57,8 @@
 	color: rgba(255,63,108,.8);
 	background-color: #fff;
 }
+.right-content {
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+}

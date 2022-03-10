@@ -17,20 +17,13 @@ const Sort = () => {
         <div className="container">
           {/* <FontAwesomeIcon icon={faSearch} className="font-color"/> */}
           {/* <input className="padding" type="text" placeholder="Sort by..." /> */}
-          <div class="dropdown">
-            <div className="flexed">
-              <div class="dropbtn">Sort by : <strong>Recommended</strong> </div>
-			  <div className="caret-icon">
-              <FontAwesomeIcon icon={faAngleDown} className="font-color" />
-            </div>
-            </div>
 
-            <div class="dropdown-content">
-              <a href="#">What's New</a>
-              <a href="#">Popularity</a>
-              <a href="#">Better Discount</a>
-            </div>
-          </div>
+          <select name="Sort" id="sorting">
+              <option value="sortby">Sort by : Recommendation</option>
+              <option value="sortprice">Price</option>
+              <option value="sortdiscount">Discount</option>
+              <option value="best seller">Best Seller</option>
+          </select>
         </div>
       </div>
     </div>

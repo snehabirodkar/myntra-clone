@@ -1,52 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import Images from "../Images";
 import "../../helper.css";
 import Pdata from "./Pdata";
 import style from "./Cards.css";
-// import $ from 'jquery';
+import ProductItem from "./ProductItem";
+import Filter from "../Filter/Filter";
 
-// $('.slider').slick({
-// 	slidesToShow: 1,
-// 	slidesToScroll: 1,
-// 	autoplay: true,
+const Cards = () => {
 
-// 	fade: true,
-// 	cssEase: 'linear'
-//   });
+    const [product, setProduct] = useState(Pdata);
 
-//   function slickPause() {
-// 	  $('.slider').slick('slickPause');
-//   }
+    const filterResult = (catItem) => {
+      const result = Pdata.filter((currData) => {
+        //   console.log(currData);
+          if(catItem === currData.category) {
+              return currData.category === catItem;
+          } else if(catItem === currData.pname) {
+              return currData.pname === catItem;
+          }
+      })
+      console.log(result);
+      setProduct(result);
+    }
 
-//   slickPause();
+    
 
-//   $('.slider').mouseover(function() {
-// 	  $('.slider').slick('slickPlay')
-//   });
-//   $('.slider').mouseout(function() {
-// 	  slickPause();
-//   });
-
-const Cards = (props) => {
   return (
-    <div className="cards">
-      <div className="card">
-        <div className="slider">
-		<img src={props.imgsrc} alt="" className="product-image" />
-          {/* <div className="slide"></div> */}
-          {/* <div class="slide"></div>
-          <div class="slide"></div> */}
-        </div>
-        <div className="card-info">
-          <h3 className="card-category">{props.pname}</h3>
-          <p className="card-title">{props.product}</p>
-          <p className="card-price">{props.price}</p>
-		  <div className="wishlist-wrapper">
-		  <button className="wishlist"> Add to bag </button>
-		  </div>
-        </div>
-      </div>
-    </div>
+
+    <>
+      
+
+        {/* FILTERING IS DEFINED */}
+        <Filter filterResult={filterResult}/>
+
+        {/* PRODUCT CARD IS DEFINED HERE */}
+        <ProductItem product={product}/>
+      
+    </>
+    
   );
 };
 
