@@ -5,11 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown
 } from "@fortawesome/free-solid-svg-icons";
+import Breadcrums from "../DetailsPage/Breadcrums";
 
 const Sort = () => {
   return (
     <div className="container">
-      <h4>Shirts For Men </h4>
+      <Breadcrums title="Home/Shirts" />
       <div className="flexed">
         <div className="">
           <strong>FILTERS</strong>

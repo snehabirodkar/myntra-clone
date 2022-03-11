@@ -8,36 +8,34 @@ import Filter from "../Filter/Filter";
 
 const Cards = () => {
 
-    const [product, setProduct] = useState(Pdata);
+    // const [product, setProduct] = useState(Pdata);
 
-    const filterResult = (catItem) => {
-      const result = Pdata.filter((currData) => {
-        //   console.log(currData);
-          if(catItem === currData.category) {
-              return currData.category === catItem;
-          } else if(catItem === currData.pname) {
-              return currData.pname === catItem;
-          }
-      })
-      console.log(result);
-      setProduct(result);
-    }
-
-    
+    // const filterResult = (catItem) => {
+    //   const result = Pdata.filter((currData) => {
+    //     //   console.log(currData);
+    //       if(catItem === currData.category) {
+    //           return currData.category === catItem;
+    //       } else if(catItem === currData.pname) {
+    //           return currData.pname === catItem;
+    //       }
+    //   })
+    //   console.log(result);
+    //   setProduct(result);
+    // }
 
   return (
 
     <>
-      
+
 
         {/* FILTERING IS DEFINED */}
-        <Filter filterResult={filterResult}/>
+        <Filter />
 
         {/* PRODUCT CARD IS DEFINED HERE */}
-        <ProductItem product={product}/>
-      
+        <ProductItem />
+
     </>
-    
+
   );
 };
 

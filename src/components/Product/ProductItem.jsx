@@ -1,15 +1,17 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const ProductItem = ({product}) => {
+const ProductItem = () => {
+	const productData = useSelector((state) => state.appData.value )
     return(
         <>
             <div className="container left-content-border">
             <div className="right-content">
               {
-                  product.map((value, index) => {
-                        const { id, pname, product, category, imgscr, price } = value;
-                      return(
-                        <>
+				productData.map((value, index) => {
+                        const { id, pname, product, category, imgscr, price, visible } = value;
+						return visible ?
+                      (
                             <div className="cards" key={index}>
                                 <div className="card">
                                     <div className="slider">
@@ -28,8 +30,7 @@ const ProductItem = ({product}) => {
                                     </div>
                                 </div>
                             </div>
-                        </>
-                      )
+                      ):null
                   })
               }
             </div>
