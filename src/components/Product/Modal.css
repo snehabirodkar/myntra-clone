@@ -11,15 +11,15 @@
 }
 .flex-end{
 	justify-content: center;
-	padding-right: 10px;
+	padding: 10px;
 	cursor: pointer;
 	color: #fff;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 22px;
 }
 .inner-head{
 	width: 100%;
-	height: 30px;
+	height: 50px;
 	background-color: rgba(255, 63, 108, .8);
 }
 .card-wrapper{

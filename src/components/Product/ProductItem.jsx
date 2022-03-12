@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBox } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -22,12 +24,14 @@ const ProductItem = () => {
                                                 <NavLink to={linkto}>
                                                     <img src={imgscr} alt="" className="product-image" />
                                                 </NavLink>
-                                                {/* <div className="slide"></div> */}
-                                                {/* <div class="slide"></div>
-                                      <div class="slide"></div> */}
                                             </div>
                                             <div className="card-info">
-                                                <h3 className="card-category">{pname}</h3>
+                                                <div className="flexed">
+												<div className="card-category">{pname}</div>
+												<div className="similar p-r">
+												<FontAwesomeIcon icon={faBox} />
+												</div>
+												</div>
                                                 <p className="card-title">{product}</p>
                                                 <p className="card-price">{price}</p>
                                                 <div className="wishlist-wrapper">

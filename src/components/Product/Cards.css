@@ -33,7 +33,19 @@ p {
 	display: flex;
 	justify-content: center;
 }
-
+.card-category{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.similar{
+	color: rgba(255, 63, 108, 0.979);
+    font-size: 22px;
+	transform: translate(-3px, -60px);
+	cursor: pointer;
+}
+.p-r{
+	padding-right: 5px;
+}
 .wishlist {
 	cursor: pointer;
 	margin-top: 8px;

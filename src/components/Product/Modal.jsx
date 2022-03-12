@@ -18,8 +18,9 @@ const Modal = () => {
   return (
     <>
       <div className="modal-wrapper" id="modalwrapper">
-        <div className="inner-head">
-          <div className="flexed flex-end" id="close">X</div>
+       <div className="modal">
+	   <div className="inner-head">
+          <div className="flexed flex-end">Your Wishlist Details</div>
           <div className="right-content">
             {wishlistData.map((value, index) => {
               const { id, pname, product, category, imgscr, price, visible } =
@@ -70,6 +71,7 @@ const Modal = () => {
             {/* {JSON.stringify(wishlistData, 3, 3)} */}
           </div>
         </div>
+	   </div>
       </div>
     </>
   );
