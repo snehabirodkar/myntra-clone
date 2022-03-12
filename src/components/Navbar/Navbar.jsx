@@ -61,13 +61,13 @@ const Navbar = () => {
 						{/* Whishlist */}
 						<div className="p-r-10">
 							<FontAwesomeIcon icon={faHeart} className="font-color" />
-							<button onClick={() => {setShowWishlist(!showWishlist)}}>Wishlist {`${wishlistData?.length > 0 ? wishlistData.length: ''}`}</button>
+							<div onClick={() => {setShowWishlist(!showWishlist)}}>Wishlist {`${wishlistData?.length > 0 ? wishlistData.length: ''}`}</div>
 						</div>
 
 						{/* Cart */}
 						<div className="p-r-10">
 							<FontAwesomeIcon icon={faBagShopping} className="font-color" />
-							<button onClick={() => {setShowCart(!showCart)}}>cart {`${cartData?.length > 0 ? cartData.length: ''}`} </button>
+							<div onClick={() => {setShowCart(!showCart)}}>cart {`${cartData?.length > 0 ? cartData.length: ''}`} </div>
 						</div>
 					</div>
 				</div>

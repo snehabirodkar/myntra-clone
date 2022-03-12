@@ -12,7 +12,7 @@ const Cart = () => {
 		<>
 			<div className="modal-wrapper">
 				<div className="inner-head">
-					<div className="flexed flex-end">X</div>
+					<div className="flexed flex-end">Your Cart Details</div>
 					<div className="right-content">
 						{cartData.map((value, index) => {
 							const { id, pname, product, category, imgscr, price, visible } =

@@ -10,9 +10,12 @@
     z-index: 99;
 }
 .flex-end{
-	justify-content: end;
+	justify-content: center;
 	padding-right: 10px;
 	cursor: pointer;
+	color: #fff;
+	font-weight: 500;
+	font-size: 20px;
 }
 .inner-head{
 	width: 100%;
@@ -22,7 +25,7 @@
 .card-wrapper{
 	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 	/* border: solid 1px red; */
-	margin-top: 75px;
+	margin-top: 30px;
 	background-color: #fff;
 }
 .inner-product-image {
