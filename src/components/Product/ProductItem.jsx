@@ -1,8 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { addToWishlist } from "../../redux/features/data";
 
 const ProductItem = () => {
-	const productData = useSelector((state) => state.appData.value )
+	const productData = useSelector((state) => state.appData.value.data )
+	const dispatch = useDispatch();
     return(
         <>
             <div className="container left-content-border">
@@ -25,7 +27,7 @@ const ProductItem = () => {
                                         <p className="card-title">{product}</p>
                                         <p className="card-price">{price}</p>
                                         <div className="wishlist-wrapper">
-                                            <button className="wishlist"> Add to bag </button>
+                                            <button className="wishlist" onClick={() => {dispatch(addToWishlist(value))}}> Add to Wishlist </button>
                                         </div>
                                     </div>
                                 </div>

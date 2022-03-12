@@ -45,28 +45,31 @@ const selectCategory = (category) => {
               <input
                 type="radio"
                 name="gender"
-                onClick={() => dispatch(filter("men"))}
+                onClick={() => dispatch(filter({type: 'filter', value:'men'}))}
               />
               <label>Men</label>
               <br />
               <input
                 type="radio"
                 name="gender"
-                onClick={() => dispatch(filter("women"))}
+				onClick={() => dispatch(filter({type: 'filter', value:'women'}))}
+
               />
               <label>Women</label>
               <br />
               <input
                 type="radio"
                 name="gender"
-                onClick={() => dispatch(filter("boys"))}
+				onClick={() => dispatch(filter({type: 'filter', value:'boys'}))}
+
               />
               <label>Boys</label>
               <br />
               <input
                 type="radio"
                 name="gender"
-                onClick={() => dispatch(filter("girls"))}
+				onClick={() => dispatch(filter({type: 'filter', value:'girls'}))}
+
               />
               <label>Girls</label>
             </div>
