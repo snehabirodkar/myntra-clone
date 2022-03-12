@@ -38,7 +38,7 @@ const selectCategory = (category) => {
   const dispatch = useDispatch();
   return (
     <div className="filter-left-content">
-      <div className="position-fixed left-content-border">
+      <div className="position-fixed left-content-border-new">
         <div className="filter-wrapper">
           <div className="container">
             <div className="label-space">

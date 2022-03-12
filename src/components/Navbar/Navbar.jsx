@@ -7,6 +7,7 @@ import { faBagShopping, faSearch, faUser, faHeart } from '@fortawesome/free-soli
 import { useSelector } from "react-redux";
 import Modal from "../Product/Modal"
 import Cart from "../Product/Cart";
+import { NavLink } from "react-router-dom";
 
 const menu = ["Mens", "Womens", "Kids", "Home & Living", "Offer"];
 
@@ -22,7 +23,7 @@ const Navbar = () => {
 				<input type="checkbox" id="nav-check" />
 				<div className="nav-header">
 					<div className="nav-title">
-						<img src={myntraLogo} alt="logo" height="50px" />
+						<NavLink to="/"><img src={myntraLogo} alt="logo" height="50px" /></NavLink>
 					</div>
 				</div>
 				<div className="nav-btn">

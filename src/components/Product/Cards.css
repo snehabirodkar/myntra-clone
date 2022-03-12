@@ -5,7 +5,9 @@
 	/* border: solid 1px red; */
 	margin: 15px;
 }
-
+.card-info{
+	text-transform: capitalize;
+}
 .product-image {
 	width: 210px;
 	height: 280px;

@@ -1,9 +1,10 @@
 
 .filter-left-content{
-	width: 30%;
+	width: 20%;
 	height: 100%;
 } 
 .left-content-border{
+	width: 80%;
 	border-right: solid 1.5px rgb(212, 212, 212);
 	border-top: solid 1.5px rgb(212, 212, 212);
 	/* padding-right: 100px; */
@@ -17,4 +18,8 @@
 }
 .label-space input{
 	margin: 8px;
+}
+.left-content-border-new{
+	border-right: solid 1.5px rgb(212, 212, 212);
+	border-top: solid 1.5px rgb(212, 212, 212);
 }
